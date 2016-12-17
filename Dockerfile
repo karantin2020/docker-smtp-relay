@@ -1,6 +1,4 @@
-FROM alpine:3.3
-
-MAINTAINER Xadozuk <xadozuk@gmail.com>
+FROM alpine:edge
 
 RUN apk --no-cache add postfix rsyslog supervisor bash
 COPY entrypoint postfix /
